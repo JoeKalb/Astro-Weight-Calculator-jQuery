@@ -21,10 +21,10 @@ $.each(planets, function(val, text) {
 });
 
 // swapping gravity positions for sorting and then creating table
-planets.sort(function(a, b) { return a[1] - b[1] }); // sorts everything the planets by gravity
+planets.sort(function(a, b) { return a[1] - b[1] }); // sorts everything the planets by gravity 
 $.each(planets, function(val, text){
   $('table').append($('<tr><td>' + text[0] + 
-    '</td><td>' + text[1] + '</td></tr>')); // appends the planet name and gravity
+    '</td><td>' + text[1] + '</td></tr>')); // appends the planet name and gravity to table
 });
 
 // the button will still make the magic happen

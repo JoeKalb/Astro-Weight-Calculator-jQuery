@@ -24,25 +24,32 @@
         <h1>Astro Weight Calculator jQuery</h1>
       </header>
       <form class=>
-        <div class="form-group">
+        <div class="form-group col-md-5">
           <label for="weight">Your Weight</label>
           <input type="number" class="form-control" id="weight"></input>
         </div>
-        <div class="form-group">
+        <div class="form-group col-md-5">
           <label for="names">Select a Planet</label>
           <select class="form-control" id="names">
             <option>Choose a planet</option>
           </select>
         </div>
-        <button type="button" class="btn btn-primary"> Calculate </button>
+        <div class="col-md-2">
+          <label for="button">Click the button!</label>
+          <button type="button" class="btn btn-primary" id="button"> Calculate </button>
+        </div>
       </form>
-      <p id="answer" class="answer"></p>
-      <table class="table table-striped table-bordered table-condensed">
-        <tr>
-          <th>Planet Name</th>
-          <th>Planet Gravity</th>
-        </tr>
-      </table>
+      <div class="col-md-12">
+        <p id="answer" class="answer"></p>
+      </div>
+      <div class="col-md-6">
+        <table class="table table-striped table-bordered table-condensed">
+          <tr>
+            <th>Planet Name</th>
+            <th>Planet Gravity</th>
+          </tr>
+        </table>
+      </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
